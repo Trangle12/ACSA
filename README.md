@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Learning Robust Semantic Correspondence for Unsupervised Person Re-Identification</h1>
+  <h1 align="center"></h1>
 
 
 ### Update Time
