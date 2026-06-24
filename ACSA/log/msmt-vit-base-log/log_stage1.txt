@@ -1,0 +1,1221 @@
+==========
+Args:Namespace(dataset='msmt17', batch_size=256, workers=4, height=256, width=128, num_instances=8, eps=0.7, eps_gap=0.02, k1=30, k2=6, arch='vit_base', pretrained_path='/data/tanxuan/vit_base_ics_cfs_lup.pth', features=0, dropout=0, momentum=0.1, drop_path_rate=0.1, hw_ratio=2, self_norm=True, conv_stem=True, lr=0.00035, weight_decay=0.0005, optimizer='SGD', epochs=40, epochs1=60, iters=200, step_size=20, seed=1, print_freq=100, eval_step=10, temp=0.05, data_dir='/data/tanxuan/work3_1/examples/data', logs_dir='../log/msmt17/PCL_ins5_vit_base_epoch40', pooling_type='gem', use_hard=False, loss_weight=0.04, weight_rcl=0.6, mask_ratio=0.75, k=5, stage1=True, stage2=True, resume=False)
+==========
+==> Load unlabeled dataset
+=> MSMT17 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |  1041 |    32621 |        15
+  query    |  3060 |    11659 |        15
+  gallery  |  3060 |    82161 |        15
+  ----------------------------------------
+Using convolution stem
+using drop_out rate is : 0.0
+using attn_drop_out rate is : 0.0
+using drop_path rate is : 0.1
+Load 172 / 178 layers.
+optimizer: SGD
+=> EPOCH num=0
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.36642789840698
+Clustering criterion: eps: 0.700
+==> Statistics for epoch 0: 419 clusters
+=> Current Lr: 3.50e-04
+Epoch: [0][100/200]	Time 0.759 (0.811)	Data 0.000 (0.069)	Loss 1.298 (1.853)	
+Epoch: [0][200/200]	Time 0.777 (0.827)	Data 0.000 (0.073)	Loss 1.176 (1.482)	
+=> EPOCH num=1
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.834261417388916
+==> Statistics for epoch 1: 890 clusters
+=> Current Lr: 3.50e-04
+Epoch: [1][100/200]	Time 0.754 (0.778)	Data 0.000 (0.034)	Loss 1.962 (1.434)	
+Epoch: [1][200/200]	Time 0.809 (0.795)	Data 0.000 (0.039)	Loss 1.314 (1.469)	
+=> EPOCH num=2
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.39908242225647
+==> Statistics for epoch 2: 959 clusters
+=> Current Lr: 3.50e-04
+Epoch: [2][100/200]	Time 0.746 (0.778)	Data 0.000 (0.033)	Loss 1.715 (1.455)	
+Epoch: [2][200/200]	Time 0.769 (0.790)	Data 0.000 (0.034)	Loss 1.646 (1.533)	
+=> EPOCH num=3
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.26814365386963
+==> Statistics for epoch 3: 965 clusters
+=> Current Lr: 3.50e-04
+Epoch: [3][100/200]	Time 0.747 (0.776)	Data 0.000 (0.033)	Loss 1.934 (1.536)	
+Epoch: [3][200/200]	Time 0.768 (0.788)	Data 0.000 (0.034)	Loss 2.193 (1.644)	
+=> EPOCH num=4
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.65624737739563
+==> Statistics for epoch 4: 988 clusters
+=> Current Lr: 3.50e-04
+Epoch: [4][100/200]	Time 0.748 (0.775)	Data 0.000 (0.034)	Loss 1.755 (1.557)	
+Epoch: [4][200/200]	Time 0.774 (0.787)	Data 0.000 (0.034)	Loss 1.770 (1.685)	
+=> EPOCH num=5
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.02171611785889
+==> Statistics for epoch 5: 1006 clusters
+=> Current Lr: 3.50e-04
+Epoch: [5][100/200]	Time 0.759 (0.779)	Data 0.000 (0.036)	Loss 1.610 (1.580)	
+Epoch: [5][200/200]	Time 0.768 (0.791)	Data 0.000 (0.036)	Loss 2.061 (1.688)	
+=> EPOCH num=6
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.40058207511902
+==> Statistics for epoch 6: 1021 clusters
+=> Current Lr: 3.50e-04
+Epoch: [6][100/200]	Time 0.763 (0.780)	Data 0.000 (0.035)	Loss 2.036 (1.510)	
+Epoch: [6][200/200]	Time 0.763 (0.794)	Data 0.000 (0.035)	Loss 1.885 (1.626)	
+=> EPOCH num=7
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.98313927650452
+==> Statistics for epoch 7: 1011 clusters
+=> Current Lr: 3.50e-04
+Epoch: [7][100/200]	Time 0.755 (0.777)	Data 0.000 (0.035)	Loss 1.717 (1.512)	
+Epoch: [7][200/200]	Time 0.769 (0.790)	Data 0.000 (0.035)	Loss 1.761 (1.630)	
+=> EPOCH num=8
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.59273886680603
+==> Statistics for epoch 8: 1014 clusters
+=> Current Lr: 3.50e-04
+Epoch: [8][100/200]	Time 0.743 (0.781)	Data 0.000 (0.039)	Loss 1.589 (1.433)	
+Epoch: [8][200/200]	Time 0.772 (0.791)	Data 0.000 (0.037)	Loss 1.998 (1.561)	
+=> EPOCH num=9
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 36.53275465965271
+==> Statistics for epoch 9: 1023 clusters
+=> Current Lr: 3.50e-04
+Epoch: [9][100/200]	Time 0.763 (0.787)	Data 0.000 (0.039)	Loss 1.751 (1.414)	
+Epoch: [9][200/200]	Time 0.776 (0.796)	Data 0.000 (0.039)	Loss 1.784 (1.525)	
+Mean AP: 51.9%
+
+ * Finished epoch   9  model mAP: 51.9%  best: 51.9% *
+
+=> EPOCH num=10
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 41.139628410339355
+==> Statistics for epoch 10: 1034 clusters
+=> Current Lr: 3.50e-04
+Epoch: [10][100/200]	Time 0.740 (0.781)	Data 0.000 (0.039)	Loss 1.718 (1.390)	
+Epoch: [10][200/200]	Time 0.772 (0.791)	Data 0.000 (0.038)	Loss 1.496 (1.507)	
+=> EPOCH num=11
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 39.818368673324585
+==> Statistics for epoch 11: 1036 clusters
+=> Current Lr: 3.50e-04
+Epoch: [11][100/200]	Time 0.767 (0.784)	Data 0.000 (0.039)	Loss 1.427 (1.371)	
+Epoch: [11][200/200]	Time 0.772 (0.799)	Data 0.000 (0.039)	Loss 1.362 (1.496)	
+=> EPOCH num=12
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 38.991482973098755
+==> Statistics for epoch 12: 1053 clusters
+=> Current Lr: 3.50e-04
+Epoch: [12][100/200]	Time 0.749 (0.790)	Data 0.000 (0.044)	Loss 1.158 (1.343)	
+Epoch: [12][200/200]	Time 0.774 (0.806)	Data 0.000 (0.044)	Loss 2.430 (1.460)	
+=> EPOCH num=13
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 36.39779472351074
+==> Statistics for epoch 13: 1052 clusters
+=> Current Lr: 3.50e-04
+Epoch: [13][100/200]	Time 0.747 (0.788)	Data 0.000 (0.040)	Loss 1.158 (1.346)	
+Epoch: [13][200/200]	Time 1.073 (0.801)	Data 0.000 (0.041)	Loss 1.334 (1.451)	
+=> EPOCH num=14
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.42068028450012
+==> Statistics for epoch 14: 1050 clusters
+=> Current Lr: 3.50e-04
+Epoch: [14][100/200]	Time 0.749 (0.792)	Data 0.000 (0.041)	Loss 1.527 (1.301)	
+Epoch: [14][200/200]	Time 0.782 (0.801)	Data 0.000 (0.040)	Loss 1.464 (1.410)	
+=> EPOCH num=15
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.79199719429016
+==> Statistics for epoch 15: 1059 clusters
+=> Current Lr: 3.50e-04
+Epoch: [15][100/200]	Time 2.241 (0.795)	Data 1.496 (0.046)	Loss 1.487 (1.246)	
+Epoch: [15][200/200]	Time 0.812 (0.805)	Data 0.000 (0.043)	Loss 1.348 (1.347)	
+=> EPOCH num=16
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 35.331501960754395
+==> Statistics for epoch 16: 1061 clusters
+=> Current Lr: 3.50e-04
+Epoch: [16][100/200]	Time 2.031 (0.788)	Data 1.277 (0.042)	Loss 1.203 (1.227)	
+Epoch: [16][200/200]	Time 0.772 (0.797)	Data 0.000 (0.042)	Loss 1.335 (1.342)	
+=> EPOCH num=17
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.13519501686096
+==> Statistics for epoch 17: 1087 clusters
+=> Current Lr: 3.50e-04
+Epoch: [17][100/200]	Time 2.016 (0.790)	Data 1.273 (0.044)	Loss 1.511 (1.246)	
+Epoch: [17][200/200]	Time 0.756 (0.797)	Data 0.000 (0.042)	Loss 1.234 (1.315)	
+=> EPOCH num=18
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.764941930770874
+==> Statistics for epoch 18: 1077 clusters
+=> Current Lr: 3.50e-04
+Epoch: [18][100/200]	Time 1.956 (0.791)	Data 1.210 (0.041)	Loss 1.534 (1.201)	
+Epoch: [18][200/200]	Time 0.789 (0.796)	Data 0.000 (0.038)	Loss 1.522 (1.309)	
+=> EPOCH num=19
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.00909161567688
+==> Statistics for epoch 19: 1079 clusters
+=> Current Lr: 3.50e-04
+Epoch: [19][100/200]	Time 1.987 (0.791)	Data 1.239 (0.044)	Loss 1.513 (1.162)	
+Epoch: [19][200/200]	Time 0.754 (0.800)	Data 0.000 (0.042)	Loss 1.717 (1.252)	
+Mean AP: 60.4%
+
+ * Finished epoch  19  model mAP: 60.4%  best: 60.4% *
+
+=> EPOCH num=20
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.425931930541992
+==> Statistics for epoch 20: 1085 clusters
+=> Current Lr: 3.50e-05
+Epoch: [20][100/200]	Time 2.008 (0.785)	Data 1.255 (0.039)	Loss 1.493 (1.116)	
+Epoch: [20][200/200]	Time 0.777 (0.799)	Data 0.000 (0.038)	Loss 1.359 (1.205)	
+=> EPOCH num=21
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 35.51271724700928
+==> Statistics for epoch 21: 1095 clusters
+=> Current Lr: 3.50e-05
+Epoch: [21][100/200]	Time 0.744 (0.775)	Data 0.000 (0.031)	Loss 1.351 (1.092)	
+Epoch: [21][200/200]	Time 0.769 (0.791)	Data 0.000 (0.034)	Loss 1.186 (1.189)	
+=> EPOCH num=22
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.540343046188354
+==> Statistics for epoch 22: 1093 clusters
+=> Current Lr: 3.50e-05
+Epoch: [22][100/200]	Time 0.750 (0.772)	Data 0.000 (0.027)	Loss 1.070 (1.099)	
+Epoch: [22][200/200]	Time 0.769 (0.790)	Data 0.000 (0.032)	Loss 1.491 (1.183)	
+=> EPOCH num=23
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.83902907371521
+==> Statistics for epoch 23: 1092 clusters
+=> Current Lr: 3.50e-05
+Epoch: [23][100/200]	Time 0.745 (0.774)	Data 0.000 (0.028)	Loss 1.207 (1.093)	
+Epoch: [23][200/200]	Time 0.772 (0.792)	Data 0.000 (0.033)	Loss 1.269 (1.196)	
+=> EPOCH num=24
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.35474419593811
+==> Statistics for epoch 24: 1089 clusters
+=> Current Lr: 3.50e-05
+Epoch: [24][100/200]	Time 0.743 (0.775)	Data 0.000 (0.030)	Loss 1.309 (1.067)	
+Epoch: [24][200/200]	Time 0.777 (0.794)	Data 0.000 (0.036)	Loss 1.157 (1.164)	
+=> EPOCH num=25
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.770491123199463
+==> Statistics for epoch 25: 1098 clusters
+=> Current Lr: 3.50e-05
+Epoch: [25][100/200]	Time 0.742 (0.776)	Data 0.000 (0.028)	Loss 1.518 (1.078)	
+Epoch: [25][200/200]	Time 0.764 (0.795)	Data 0.000 (0.033)	Loss 1.149 (1.170)	
+=> EPOCH num=26
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.043327569961548
+==> Statistics for epoch 26: 1095 clusters
+=> Current Lr: 3.50e-05
+Epoch: [26][100/200]	Time 0.751 (0.783)	Data 0.000 (0.033)	Loss 1.168 (1.082)	
+Epoch: [26][200/200]	Time 0.782 (0.798)	Data 0.000 (0.036)	Loss 1.307 (1.177)	
+=> EPOCH num=27
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 36.00001502037048
+==> Statistics for epoch 27: 1090 clusters
+=> Current Lr: 3.50e-05
+Epoch: [27][100/200]	Time 0.749 (0.778)	Data 0.000 (0.033)	Loss 1.484 (1.063)	
+Epoch: [27][200/200]	Time 0.781 (0.798)	Data 0.000 (0.039)	Loss 1.199 (1.155)	
+=> EPOCH num=28
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.497342586517334
+==> Statistics for epoch 28: 1093 clusters
+=> Current Lr: 3.50e-05
+Epoch: [28][100/200]	Time 0.742 (0.781)	Data 0.000 (0.036)	Loss 1.404 (1.063)	
+Epoch: [28][200/200]	Time 0.775 (0.794)	Data 0.000 (0.036)	Loss 0.986 (1.163)	
+=> EPOCH num=29
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.20302224159241
+==> Statistics for epoch 29: 1095 clusters
+=> Current Lr: 3.50e-05
+Epoch: [29][100/200]	Time 0.748 (0.780)	Data 0.000 (0.033)	Loss 1.063 (1.066)	
+Epoch: [29][200/200]	Time 0.786 (0.792)	Data 0.000 (0.036)	Loss 1.311 (1.165)	
+Mean AP: 62.2%
+
+ * Finished epoch  29  model mAP: 62.2%  best: 62.2% *
+
+=> EPOCH num=30
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.11904573440552
+==> Statistics for epoch 30: 1094 clusters
+=> Current Lr: 3.50e-05
+Epoch: [30][100/200]	Time 0.772 (0.778)	Data 0.000 (0.031)	Loss 1.219 (1.056)	
+Epoch: [30][200/200]	Time 0.764 (0.793)	Data 0.000 (0.039)	Loss 1.287 (1.150)	
+=> EPOCH num=31
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.43782329559326
+==> Statistics for epoch 31: 1093 clusters
+=> Current Lr: 3.50e-05
+Epoch: [31][100/200]	Time 0.759 (0.783)	Data 0.000 (0.027)	Loss 1.233 (1.050)	
+Epoch: [31][200/200]	Time 0.780 (0.800)	Data 0.000 (0.033)	Loss 1.152 (1.156)	
+=> EPOCH num=32
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 37.146543741226196
+==> Statistics for epoch 32: 1101 clusters
+=> Current Lr: 3.50e-05
+Epoch: [32][100/200]	Time 0.762 (0.781)	Data 0.000 (0.030)	Loss 1.089 (1.069)	
+Epoch: [32][200/200]	Time 0.774 (0.796)	Data 0.000 (0.035)	Loss 1.225 (1.163)	
+=> EPOCH num=33
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.88871741294861
+==> Statistics for epoch 33: 1105 clusters
+=> Current Lr: 3.50e-05
+Epoch: [33][100/200]	Time 0.769 (0.784)	Data 0.000 (0.033)	Loss 1.276 (1.072)	
+Epoch: [33][200/200]	Time 0.768 (0.800)	Data 0.000 (0.036)	Loss 1.500 (1.166)	
+=> EPOCH num=34
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 37.22528886795044
+==> Statistics for epoch 34: 1087 clusters
+=> Current Lr: 3.50e-05
+Epoch: [34][100/200]	Time 2.103 (0.789)	Data 1.346 (0.041)	Loss 1.136 (1.029)	
+Epoch: [34][200/200]	Time 0.769 (0.798)	Data 0.000 (0.039)	Loss 1.122 (1.127)	
+=> EPOCH num=35
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.17899942398071
+==> Statistics for epoch 35: 1106 clusters
+=> Current Lr: 3.50e-05
+Epoch: [35][100/200]	Time 0.744 (0.782)	Data 0.000 (0.031)	Loss 1.205 (1.063)	
+Epoch: [35][200/200]	Time 0.784 (0.792)	Data 0.000 (0.035)	Loss 1.192 (1.150)	
+=> EPOCH num=36
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.365543603897095
+==> Statistics for epoch 36: 1096 clusters
+=> Current Lr: 3.50e-05
+Epoch: [36][100/200]	Time 0.774 (0.780)	Data 0.000 (0.028)	Loss 1.172 (1.045)	
+Epoch: [36][200/200]	Time 0.765 (0.792)	Data 0.000 (0.035)	Loss 1.200 (1.138)	
+=> EPOCH num=37
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.38147830963135
+==> Statistics for epoch 37: 1106 clusters
+=> Current Lr: 3.50e-05
+Epoch: [37][100/200]	Time 0.765 (0.779)	Data 0.000 (0.026)	Loss 1.324 (1.058)	
+Epoch: [37][200/200]	Time 0.790 (0.799)	Data 0.000 (0.033)	Loss 0.937 (1.149)	
+=> EPOCH num=38
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.437981605529785
+==> Statistics for epoch 38: 1106 clusters
+=> Current Lr: 3.50e-05
+Epoch: [38][100/200]	Time 0.763 (0.787)	Data 0.000 (0.032)	Loss 1.200 (1.031)	
+Epoch: [38][200/200]	Time 0.777 (0.801)	Data 0.000 (0.037)	Loss 1.133 (1.129)	
+=> EPOCH num=39
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.19030952453613
+==> Statistics for epoch 39: 1098 clusters
+=> Current Lr: 3.50e-05
+Epoch: [39][100/200]	Time 0.760 (0.778)	Data 0.000 (0.029)	Loss 1.481 (1.039)	
+Epoch: [39][200/200]	Time 0.771 (0.794)	Data 0.000 (0.034)	Loss 1.332 (1.129)	
+Mean AP: 62.8%
+
+ * Finished epoch  39  model mAP: 62.8%  best: 62.8% *
+
+Stage1 Total running time:  3:54:30.269853
+==========
+Args:Namespace(dataset='msmt17', batch_size=256, workers=4, height=256, width=128, num_instances=8, eps=0.7, eps_gap=0.02, k1=30, k2=6, arch='vit_base', pretrained_path='/data/tanxuan/vit_base_ics_cfs_lup.pth', features=0, dropout=0, momentum=0.1, drop_path_rate=0.1, hw_ratio=2, self_norm=True, conv_stem=True, lr=0.00035, weight_decay=0.0005, optimizer='SGD', epochs=40, epochs1=60, iters=200, step_size=20, seed=1, print_freq=100, eval_step=10, temp=0.05, data_dir='/data/tanxuan/work3_1/examples/data', logs_dir='../log/msmt17/PCL_ins5_vit_base_epoch40', pooling_type='gem', use_hard=False, loss_weight=0.04, weight_rcl=0.6, mask_ratio=0.75, k=5, stage1=True, stage2=True, resume=False)
+==========
+==> Load unlabeled dataset
+=> MSMT17 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |  1041 |    32621 |        15
+  query    |  3060 |    11659 |        15
+  gallery  |  3060 |    82161 |        15
+  ----------------------------------------
+Using convolution stem
+using drop_out rate is : 0.0
+using attn_drop_out rate is : 0.0
+using drop_path rate is : 0.1
+Load 172 / 178 layers.
+Using convolution stem
+using drop_out rate is : 0.0
+using attn_drop_out rate is : 0.0
+using drop_path rate is : 0.1
+Load 172 / 178 layers.
+=> Loaded checkpoint '../log/msmt17/PCL_ins5_vit_base_epoch40/log_s1/model_best.pth.tar'
+optimizer: SGD
+=> EPOCH num=0
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.98139262199402
+Clustering criterion: eps: 0.700
+ generate_random_features k : 5
+==> Statistics for epoch 0: 1103 clusters
+=> Current Lr: 3.50e-04
+Epoch: [0][100/200]	Time 0.759 (0.787)	Data 0.000 (0.031)	Loss 2.099 (1.712)	
+Epoch: [0][200/200]	Time 0.777 (0.802)	Data 0.000 (0.036)	Loss 1.623 (1.797)	
+=> EPOCH num=1
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.131107330322266
+ generate_random_features k : 5
+==> Statistics for epoch 1: 1086 clusters
+=> Current Lr: 3.50e-04
+Epoch: [1][100/200]	Time 2.052 (0.794)	Data 1.292 (0.041)	Loss 1.691 (1.592)	
+Epoch: [1][200/200]	Time 0.770 (0.805)	Data 0.000 (0.040)	Loss 1.869 (1.662)	
+=> EPOCH num=2
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.71301245689392
+ generate_random_features k : 5
+==> Statistics for epoch 2: 1089 clusters
+=> Current Lr: 3.50e-04
+Epoch: [2][100/200]	Time 0.760 (0.788)	Data 0.000 (0.030)	Loss 1.892 (1.561)	
+Epoch: [2][200/200]	Time 0.766 (0.801)	Data 0.000 (0.038)	Loss 1.310 (1.616)	
+=> EPOCH num=3
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.526397228240967
+ generate_random_features k : 5
+==> Statistics for epoch 3: 1099 clusters
+=> Current Lr: 3.50e-04
+Epoch: [3][100/200]	Time 0.777 (0.787)	Data 0.000 (0.030)	Loss 1.936 (1.522)	
+Epoch: [3][200/200]	Time 0.777 (0.800)	Data 0.000 (0.037)	Loss 1.637 (1.601)	
+=> EPOCH num=4
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.41247797012329
+ generate_random_features k : 5
+==> Statistics for epoch 4: 1100 clusters
+=> Current Lr: 3.50e-04
+Epoch: [4][100/200]	Time 0.766 (0.785)	Data 0.000 (0.030)	Loss 1.522 (1.473)	
+Epoch: [4][200/200]	Time 0.763 (0.795)	Data 0.000 (0.035)	Loss 1.662 (1.557)	
+=> EPOCH num=5
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.21300482749939
+ generate_random_features k : 5
+==> Statistics for epoch 5: 1101 clusters
+=> Current Lr: 3.50e-04
+Epoch: [5][100/200]	Time 0.768 (0.788)	Data 0.000 (0.032)	Loss 1.425 (1.433)	
+Epoch: [5][200/200]	Time 0.783 (0.800)	Data 0.000 (0.036)	Loss 1.551 (1.520)	
+=> EPOCH num=6
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.11751580238342
+ generate_random_features k : 5
+==> Statistics for epoch 6: 1088 clusters
+=> Current Lr: 3.50e-04
+Epoch: [6][100/200]	Time 0.777 (0.783)	Data 0.000 (0.031)	Loss 1.420 (1.388)	
+Epoch: [6][200/200]	Time 0.757 (0.797)	Data 0.000 (0.037)	Loss 1.598 (1.450)	
+=> EPOCH num=7
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.269415855407715
+ generate_random_features k : 5
+==> Statistics for epoch 7: 1085 clusters
+=> Current Lr: 3.50e-04
+Epoch: [7][100/200]	Time 2.112 (0.799)	Data 1.331 (0.043)	Loss 1.577 (1.336)	
+Epoch: [7][200/200]	Time 0.758 (0.805)	Data 0.000 (0.041)	Loss 1.414 (1.401)	
+=> EPOCH num=8
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.68349528312683
+ generate_random_features k : 5
+==> Statistics for epoch 8: 1076 clusters
+=> Current Lr: 3.50e-04
+Epoch: [8][100/200]	Time 2.314 (0.799)	Data 1.291 (0.042)	Loss 1.849 (1.290)	
+Epoch: [8][200/200]	Time 0.781 (0.806)	Data 0.000 (0.043)	Loss 1.345 (1.355)	
+=> EPOCH num=9
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.046242475509644
+ generate_random_features k : 5
+==> Statistics for epoch 9: 1091 clusters
+=> Current Lr: 3.50e-04
+Epoch: [9][100/200]	Time 0.768 (0.787)	Data 0.000 (0.032)	Loss 1.417 (1.264)	
+Epoch: [9][200/200]	Time 0.754 (0.799)	Data 0.000 (0.036)	Loss 1.313 (1.326)	
+Mean AP: 60.0%
+Mean AP: 58.2%
+
+ * Finished epoch   9  model mAP: 60.0%  model_ema mAP: 58.2%  best: 62.8%
+
+=> EPOCH num=10
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.944276094436646
+ generate_random_features k : 5
+==> Statistics for epoch 10: 1106 clusters
+=> Current Lr: 3.50e-04
+Epoch: [10][100/200]	Time 0.761 (0.781)	Data 0.000 (0.030)	Loss 1.309 (1.174)	
+Epoch: [10][200/200]	Time 0.781 (0.800)	Data 0.000 (0.036)	Loss 1.310 (1.229)	
+=> EPOCH num=11
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.63267469406128
+ generate_random_features k : 5
+==> Statistics for epoch 11: 1100 clusters
+=> Current Lr: 3.50e-04
+Epoch: [11][100/200]	Time 0.769 (0.781)	Data 0.000 (0.027)	Loss 1.269 (1.077)	
+Epoch: [11][200/200]	Time 0.776 (0.799)	Data 0.000 (0.032)	Loss 1.098 (1.141)	
+=> EPOCH num=12
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.912182569503784
+ generate_random_features k : 5
+==> Statistics for epoch 12: 1102 clusters
+=> Current Lr: 3.50e-04
+Epoch: [12][100/200]	Time 0.763 (0.789)	Data 0.000 (0.030)	Loss 1.229 (1.050)	
+Epoch: [12][200/200]	Time 0.755 (0.805)	Data 0.000 (0.036)	Loss 0.929 (1.122)	
+=> EPOCH num=13
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.384305477142334
+ generate_random_features k : 5
+==> Statistics for epoch 13: 1103 clusters
+=> Current Lr: 3.50e-04
+Epoch: [13][100/200]	Time 0.756 (0.786)	Data 0.000 (0.032)	Loss 1.300 (1.083)	
+Epoch: [13][200/200]	Time 0.752 (0.803)	Data 0.000 (0.038)	Loss 1.495 (1.150)	
+=> EPOCH num=14
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.986539125442505
+ generate_random_features k : 5
+==> Statistics for epoch 14: 1113 clusters
+=> Current Lr: 3.50e-04
+Epoch: [14][100/200]	Time 0.773 (0.785)	Data 0.000 (0.029)	Loss 1.174 (1.146)	
+Epoch: [14][200/200]	Time 0.771 (0.801)	Data 0.000 (0.034)	Loss 1.122 (1.218)	
+=> EPOCH num=15
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.41364884376526
+ generate_random_features k : 5
+==> Statistics for epoch 15: 1105 clusters
+=> Current Lr: 3.50e-04
+Epoch: [15][100/200]	Time 0.765 (0.785)	Data 0.000 (0.030)	Loss 1.284 (1.192)	
+Epoch: [15][200/200]	Time 0.795 (0.804)	Data 0.000 (0.035)	Loss 1.141 (1.260)	
+=> EPOCH num=16
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.97200083732605
+ generate_random_features k : 5
+==> Statistics for epoch 16: 1103 clusters
+=> Current Lr: 3.50e-04
+Epoch: [16][100/200]	Time 0.770 (0.788)	Data 0.000 (0.032)	Loss 1.422 (1.236)	
+Epoch: [16][200/200]	Time 0.788 (0.805)	Data 0.000 (0.036)	Loss 1.673 (1.297)	
+=> EPOCH num=17
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.527472972869873
+ generate_random_features k : 5
+==> Statistics for epoch 17: 1109 clusters
+=> Current Lr: 3.50e-04
+Epoch: [17][100/200]	Time 0.769 (0.784)	Data 0.000 (0.030)	Loss 1.642 (1.251)	
+Epoch: [17][200/200]	Time 0.779 (0.802)	Data 0.000 (0.034)	Loss 1.082 (1.302)	
+=> EPOCH num=18
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.240328311920166
+ generate_random_features k : 5
+==> Statistics for epoch 18: 1109 clusters
+=> Current Lr: 3.50e-04
+Epoch: [18][100/200]	Time 0.770 (0.787)	Data 0.000 (0.032)	Loss 1.346 (1.216)	
+Epoch: [18][200/200]	Time 0.772 (0.804)	Data 0.000 (0.037)	Loss 1.187 (1.277)	
+=> EPOCH num=19
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.988648653030396
+ generate_random_features k : 5
+==> Statistics for epoch 19: 1103 clusters
+=> Current Lr: 3.50e-04
+Epoch: [19][100/200]	Time 0.757 (0.784)	Data 0.000 (0.031)	Loss 1.547 (1.157)	
+Epoch: [19][200/200]	Time 0.778 (0.801)	Data 0.000 (0.036)	Loss 1.081 (1.215)	
+Mean AP: 62.4%
+Mean AP: 62.7%
+
+ * Finished epoch  19  model mAP: 62.4%  model_ema mAP: 62.7%  best: 62.8%
+
+=> EPOCH num=20
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.586766958236694
+ generate_random_features k : 5
+==> Statistics for epoch 20: 1108 clusters
+=> Current Lr: 3.50e-05
+Epoch: [20][100/200]	Time 0.748 (0.789)	Data 0.000 (0.034)	Loss 1.163 (1.075)	
+Epoch: [20][200/200]	Time 0.778 (0.799)	Data 0.000 (0.037)	Loss 0.903 (1.126)	
+=> EPOCH num=21
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.66339325904846
+ generate_random_features k : 5
+==> Statistics for epoch 21: 1113 clusters
+=> Current Lr: 3.50e-05
+Epoch: [21][100/200]	Time 0.754 (0.786)	Data 0.000 (0.032)	Loss 1.147 (1.109)	
+Epoch: [21][200/200]	Time 0.778 (0.805)	Data 0.000 (0.037)	Loss 1.096 (1.176)	
+=> EPOCH num=22
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.608190298080444
+ generate_random_features k : 5
+==> Statistics for epoch 22: 1111 clusters
+=> Current Lr: 3.50e-05
+Epoch: [22][100/200]	Time 0.774 (0.787)	Data 0.000 (0.028)	Loss 1.179 (1.153)	
+Epoch: [22][200/200]	Time 0.780 (0.810)	Data 0.000 (0.034)	Loss 1.222 (1.206)	
+=> EPOCH num=23
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.207991361618042
+ generate_random_features k : 5
+==> Statistics for epoch 23: 1109 clusters
+=> Current Lr: 3.50e-05
+Epoch: [23][100/200]	Time 0.773 (0.789)	Data 0.000 (0.031)	Loss 1.049 (1.181)	
+Epoch: [23][200/200]	Time 0.779 (0.807)	Data 0.000 (0.037)	Loss 1.422 (1.255)	
+=> EPOCH num=24
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.51638174057007
+ generate_random_features k : 5
+==> Statistics for epoch 24: 1108 clusters
+=> Current Lr: 3.50e-05
+Epoch: [24][100/200]	Time 0.773 (0.787)	Data 0.000 (0.031)	Loss 1.256 (1.191)	
+Epoch: [24][200/200]	Time 0.787 (0.804)	Data 0.000 (0.036)	Loss 1.155 (1.253)	
+=> EPOCH num=25
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.844710111618042
+ generate_random_features k : 5
+==> Statistics for epoch 25: 1104 clusters
+=> Current Lr: 3.50e-05
+Epoch: [25][100/200]	Time 0.761 (0.786)	Data 0.000 (0.031)	Loss 1.216 (1.186)	
+Epoch: [25][200/200]	Time 0.768 (0.804)	Data 0.000 (0.036)	Loss 1.327 (1.254)	
+=> EPOCH num=26
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 35.97698903083801
+ generate_random_features k : 5
+==> Statistics for epoch 26: 1108 clusters
+=> Current Lr: 3.50e-05
+Epoch: [26][100/200]	Time 0.762 (0.786)	Data 0.000 (0.032)	Loss 1.331 (1.212)	
+Epoch: [26][200/200]	Time 0.782 (0.801)	Data 0.000 (0.037)	Loss 1.319 (1.268)	
+=> EPOCH num=27
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.672847032546997
+ generate_random_features k : 5
+==> Statistics for epoch 27: 1110 clusters
+=> Current Lr: 3.50e-05
+Epoch: [27][100/200]	Time 0.769 (0.786)	Data 0.000 (0.031)	Loss 1.177 (1.190)	
+Epoch: [27][200/200]	Time 0.784 (0.804)	Data 0.000 (0.037)	Loss 1.276 (1.253)	
+=> EPOCH num=28
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.89389753341675
+ generate_random_features k : 5
+==> Statistics for epoch 28: 1111 clusters
+=> Current Lr: 3.50e-05
+Epoch: [28][100/200]	Time 0.788 (0.786)	Data 0.000 (0.030)	Loss 1.372 (1.132)	
+Epoch: [28][200/200]	Time 0.775 (0.802)	Data 0.000 (0.036)	Loss 1.504 (1.193)	
+=> EPOCH num=29
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.327489614486694
+ generate_random_features k : 5
+==> Statistics for epoch 29: 1115 clusters
+=> Current Lr: 3.50e-05
+Epoch: [29][100/200]	Time 0.772 (0.787)	Data 0.000 (0.032)	Loss 1.171 (1.066)	
+Epoch: [29][200/200]	Time 0.788 (0.807)	Data 0.000 (0.037)	Loss 1.142 (1.124)	
+Mean AP: 62.9%
+Mean AP: 60.0%
+
+ * Finished epoch  29  model mAP: 62.9%  model_ema mAP: 60.0%  best: 62.9% *
+
+=> EPOCH num=30
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.43212175369263
+ generate_random_features k : 5
+==> Statistics for epoch 30: 1120 clusters
+=> Current Lr: 3.50e-05
+Epoch: [30][100/200]	Time 0.762 (0.787)	Data 0.000 (0.033)	Loss 1.278 (1.030)	
+Epoch: [30][200/200]	Time 0.778 (0.799)	Data 0.000 (0.040)	Loss 0.932 (1.087)	
+=> EPOCH num=31
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.739028692245483
+ generate_random_features k : 5
+==> Statistics for epoch 31: 1127 clusters
+=> Current Lr: 3.50e-05
+Epoch: [31][100/200]	Time 0.755 (0.788)	Data 0.000 (0.030)	Loss 1.081 (1.025)	
+Epoch: [31][200/200]	Time 0.775 (0.804)	Data 0.000 (0.034)	Loss 1.513 (1.076)	
+=> EPOCH num=32
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.51170039176941
+ generate_random_features k : 5
+==> Statistics for epoch 32: 1121 clusters
+=> Current Lr: 3.50e-05
+Epoch: [32][100/200]	Time 0.776 (0.783)	Data 0.000 (0.028)	Loss 1.130 (1.061)	
+Epoch: [32][200/200]	Time 0.788 (0.802)	Data 0.000 (0.035)	Loss 1.095 (1.120)	
+=> EPOCH num=33
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.714250564575195
+ generate_random_features k : 5
+==> Statistics for epoch 33: 1118 clusters
+=> Current Lr: 3.50e-05
+Epoch: [33][100/200]	Time 0.770 (0.788)	Data 0.000 (0.032)	Loss 1.149 (1.083)	
+Epoch: [33][200/200]	Time 0.782 (0.806)	Data 0.000 (0.040)	Loss 1.184 (1.142)	
+=> EPOCH num=34
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.898018836975098
+ generate_random_features k : 5
+==> Statistics for epoch 34: 1130 clusters
+=> Current Lr: 3.50e-05
+Epoch: [34][100/200]	Time 0.763 (0.782)	Data 0.000 (0.030)	Loss 1.224 (1.106)	
+Epoch: [34][200/200]	Time 0.774 (0.802)	Data 0.000 (0.037)	Loss 1.228 (1.167)	
+=> EPOCH num=35
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 36.09981179237366
+ generate_random_features k : 5
+==> Statistics for epoch 35: 1121 clusters
+=> Current Lr: 3.50e-05
+Epoch: [35][100/200]	Time 0.766 (0.785)	Data 0.000 (0.031)	Loss 1.398 (1.145)	
+Epoch: [35][200/200]	Time 0.797 (0.805)	Data 0.000 (0.038)	Loss 1.573 (1.207)	
+=> EPOCH num=36
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 35.91508984565735
+ generate_random_features k : 5
+==> Statistics for epoch 36: 1127 clusters
+=> Current Lr: 3.50e-05
+Epoch: [36][100/200]	Time 0.764 (0.783)	Data 0.000 (0.030)	Loss 1.158 (1.156)	
+Epoch: [36][200/200]	Time 0.781 (0.800)	Data 0.000 (0.034)	Loss 1.115 (1.220)	
+=> EPOCH num=37
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 35.57723546028137
+ generate_random_features k : 5
+==> Statistics for epoch 37: 1116 clusters
+=> Current Lr: 3.50e-05
+Epoch: [37][100/200]	Time 0.767 (0.789)	Data 0.000 (0.032)	Loss 1.125 (1.141)	
+Epoch: [37][200/200]	Time 0.796 (0.808)	Data 0.000 (0.037)	Loss 1.062 (1.195)	
+=> EPOCH num=38
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.877872467041016
+ generate_random_features k : 5
+==> Statistics for epoch 38: 1118 clusters
+=> Current Lr: 3.50e-05
+Epoch: [38][100/200]	Time 0.771 (0.786)	Data 0.000 (0.032)	Loss 1.299 (1.124)	
+Epoch: [38][200/200]	Time 0.782 (0.804)	Data 0.000 (0.038)	Loss 0.991 (1.183)	
+=> EPOCH num=39
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.31322145462036
+ generate_random_features k : 5
+==> Statistics for epoch 39: 1120 clusters
+=> Current Lr: 3.50e-05
+Epoch: [39][100/200]	Time 0.758 (0.786)	Data 0.000 (0.032)	Loss 1.180 (1.097)	
+Epoch: [39][200/200]	Time 0.775 (0.803)	Data 0.000 (0.037)	Loss 1.156 (1.164)	
+Mean AP: 63.2%
+Mean AP: 62.2%
+
+ * Finished epoch  39  model mAP: 63.2%  model_ema mAP: 62.2%  best: 63.2% *
+
+=> EPOCH num=40
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.12383031845093
+ generate_random_features k : 5
+==> Statistics for epoch 40: 1122 clusters
+=> Current Lr: 3.50e-06
+Epoch: [40][100/200]	Time 0.748 (0.794)	Data 0.000 (0.039)	Loss 1.120 (1.094)	
+Epoch: [40][200/200]	Time 0.796 (0.807)	Data 0.000 (0.042)	Loss 1.250 (1.167)	
+=> EPOCH num=41
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.080455541610718
+ generate_random_features k : 5
+==> Statistics for epoch 41: 1124 clusters
+=> Current Lr: 3.50e-06
+Epoch: [41][100/200]	Time 0.765 (0.798)	Data 0.000 (0.030)	Loss 1.155 (1.142)	
+Epoch: [41][200/200]	Time 0.780 (0.809)	Data 0.000 (0.035)	Loss 1.136 (1.222)	
+=> EPOCH num=42
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.530965089797974
+ generate_random_features k : 5
+==> Statistics for epoch 42: 1121 clusters
+=> Current Lr: 3.50e-06
+Epoch: [42][100/200]	Time 0.764 (0.786)	Data 0.000 (0.030)	Loss 1.425 (1.183)	
+Epoch: [42][200/200]	Time 0.779 (0.805)	Data 0.000 (0.036)	Loss 1.222 (1.264)	
+=> EPOCH num=43
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.99955701828003
+ generate_random_features k : 5
+==> Statistics for epoch 43: 1121 clusters
+=> Current Lr: 3.50e-06
+Epoch: [43][100/200]	Time 0.766 (0.789)	Data 0.000 (0.033)	Loss 1.197 (1.182)	
+Epoch: [43][200/200]	Time 0.785 (0.805)	Data 0.000 (0.037)	Loss 1.163 (1.258)	
+=> EPOCH num=44
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.515992164611816
+ generate_random_features k : 5
+==> Statistics for epoch 44: 1121 clusters
+=> Current Lr: 3.50e-06
+Epoch: [44][100/200]	Time 0.764 (0.786)	Data 0.000 (0.032)	Loss 1.284 (1.209)	
+Epoch: [44][200/200]	Time 0.797 (0.803)	Data 0.000 (0.038)	Loss 1.232 (1.286)	
+=> EPOCH num=45
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.677016973495483
+ generate_random_features k : 5
+==> Statistics for epoch 45: 1118 clusters
+=> Current Lr: 3.50e-06
+Epoch: [45][100/200]	Time 0.769 (0.786)	Data 0.000 (0.031)	Loss 1.332 (1.210)	
+Epoch: [45][200/200]	Time 0.772 (0.803)	Data 0.000 (0.036)	Loss 1.369 (1.296)	
+=> EPOCH num=46
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.36281967163086
+ generate_random_features k : 5
+==> Statistics for epoch 46: 1124 clusters
+=> Current Lr: 3.50e-06
+Epoch: [46][100/200]	Time 0.766 (0.788)	Data 0.000 (0.032)	Loss 1.245 (1.205)	
+Epoch: [46][200/200]	Time 0.794 (0.806)	Data 0.000 (0.038)	Loss 1.606 (1.287)	
+=> EPOCH num=47
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.012752056121826
+ generate_random_features k : 5
+==> Statistics for epoch 47: 1118 clusters
+=> Current Lr: 3.50e-06
+Epoch: [47][100/200]	Time 0.777 (0.789)	Data 0.000 (0.032)	Loss 1.495 (1.192)	
+Epoch: [47][200/200]	Time 0.782 (0.806)	Data 0.000 (0.036)	Loss 1.367 (1.258)	
+=> EPOCH num=48
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.20160627365112
+ generate_random_features k : 5
+==> Statistics for epoch 48: 1116 clusters
+=> Current Lr: 3.50e-06
+Epoch: [48][100/200]	Time 0.765 (0.786)	Data 0.000 (0.029)	Loss 1.583 (1.154)	
+Epoch: [48][200/200]	Time 0.800 (0.804)	Data 0.000 (0.036)	Loss 1.117 (1.213)	
+=> EPOCH num=49
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.11251735687256
+ generate_random_features k : 5
+==> Statistics for epoch 49: 1124 clusters
+=> Current Lr: 3.50e-06
+Epoch: [49][100/200]	Time 0.763 (0.783)	Data 0.000 (0.032)	Loss 1.045 (1.105)	
+Epoch: [49][200/200]	Time 0.779 (0.804)	Data 0.000 (0.038)	Loss 1.057 (1.179)	
+Mean AP: 62.7%
+Mean AP: 60.1%
+
+ * Finished epoch  49  model mAP: 62.7%  model_ema mAP: 60.1%  best: 63.2%
+
+=> EPOCH num=50
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.23367500305176
+ generate_random_features k : 5
+==> Statistics for epoch 50: 1124 clusters
+=> Current Lr: 3.50e-06
+Epoch: [50][100/200]	Time 0.762 (0.788)	Data 0.000 (0.032)	Loss 0.986 (1.096)	
+Epoch: [50][200/200]	Time 0.774 (0.798)	Data 0.000 (0.037)	Loss 1.711 (1.158)	
+=> EPOCH num=51
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.010191202163696
+ generate_random_features k : 5
+==> Statistics for epoch 51: 1124 clusters
+=> Current Lr: 3.50e-06
+Epoch: [51][100/200]	Time 0.788 (0.787)	Data 0.000 (0.029)	Loss 1.163 (1.094)	
+Epoch: [51][200/200]	Time 0.787 (0.804)	Data 0.000 (0.034)	Loss 1.321 (1.168)	
+=> EPOCH num=52
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 34.56509828567505
+ generate_random_features k : 5
+==> Statistics for epoch 52: 1119 clusters
+=> Current Lr: 3.50e-06
+Epoch: [52][100/200]	Time 0.772 (0.788)	Data 0.000 (0.030)	Loss 1.354 (1.106)	
+Epoch: [52][200/200]	Time 0.790 (0.805)	Data 0.000 (0.035)	Loss 1.266 (1.186)	
+=> EPOCH num=53
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.148300170898438
+ generate_random_features k : 5
+==> Statistics for epoch 53: 1121 clusters
+=> Current Lr: 3.50e-06
+Epoch: [53][100/200]	Time 0.766 (0.782)	Data 0.000 (0.029)	Loss 1.248 (1.116)	
+Epoch: [53][200/200]	Time 0.794 (0.800)	Data 0.000 (0.034)	Loss 1.189 (1.197)	
+=> EPOCH num=54
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.34196448326111
+ generate_random_features k : 5
+==> Statistics for epoch 54: 1125 clusters
+=> Current Lr: 3.50e-06
+Epoch: [54][100/200]	Time 0.765 (0.788)	Data 0.000 (0.032)	Loss 1.256 (1.136)	
+Epoch: [54][200/200]	Time 0.776 (0.804)	Data 0.000 (0.039)	Loss 1.315 (1.208)	
+=> EPOCH num=55
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 36.263123512268066
+ generate_random_features k : 5
+==> Statistics for epoch 55: 1119 clusters
+=> Current Lr: 3.50e-06
+Epoch: [55][100/200]	Time 0.757 (0.784)	Data 0.000 (0.032)	Loss 1.131 (1.150)	
+Epoch: [55][200/200]	Time 0.775 (0.800)	Data 0.000 (0.036)	Loss 1.103 (1.219)	
+=> EPOCH num=56
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.6441490650177
+ generate_random_features k : 5
+==> Statistics for epoch 56: 1121 clusters
+=> Current Lr: 3.50e-06
+Epoch: [56][100/200]	Time 0.814 (0.786)	Data 0.000 (0.032)	Loss 0.985 (1.154)	
+Epoch: [56][200/200]	Time 0.781 (0.804)	Data 0.000 (0.037)	Loss 1.140 (1.213)	
+=> EPOCH num=57
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.885872840881348
+ generate_random_features k : 5
+==> Statistics for epoch 57: 1127 clusters
+=> Current Lr: 3.50e-06
+Epoch: [57][100/200]	Time 0.777 (0.786)	Data 0.000 (0.028)	Loss 1.753 (1.144)	
+Epoch: [57][200/200]	Time 0.782 (0.804)	Data 0.000 (0.035)	Loss 1.244 (1.212)	
+=> EPOCH num=58
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 32.209611654281616
+ generate_random_features k : 5
+==> Statistics for epoch 58: 1128 clusters
+=> Current Lr: 3.50e-06
+Epoch: [58][100/200]	Time 0.772 (0.786)	Data 0.000 (0.030)	Loss 1.279 (1.127)	
+Epoch: [58][200/200]	Time 0.780 (0.805)	Data 0.000 (0.037)	Loss 1.271 (1.197)	
+=> EPOCH num=59
+==> Create pseudo labels for unlabeled data
+=> Extract features...
+=> Extract EMA Model features...
+=> Extract mask features...
+Computing jaccard distance...
+Jaccard distance computing time cost: 31.26995301246643
+ generate_random_features k : 5
+==> Statistics for epoch 59: 1128 clusters
+=> Current Lr: 3.50e-06
+Epoch: [59][100/200]	Time 0.762 (0.787)	Data 0.000 (0.032)	Loss 1.345 (1.115)	
+Epoch: [59][200/200]	Time 0.776 (0.804)	Data 0.000 (0.037)	Loss 1.511 (1.189)	
+Mean AP: 64.5%
+Mean AP: 62.4%
+
+ * Finished epoch  59  model mAP: 64.5%  model_ema mAP: 62.4%  best: 64.5% *
+
+==> Test with the best model:
+=> Loaded checkpoint '../log/msmt17/PCL_ins5_vit_base_epoch40/log_s2/model_best.pth.tar'
+Mean AP: 64.5%
+CMC Scores:
+  top-1          85.4%
+  top-5          92.4%
+  top-10         94.1%
+Total running time:  7:22:39.386917
