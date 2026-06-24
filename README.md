@@ -1,6 +1,8 @@
 <p align="center">
   <h1 align="center"></h1>
 
+# Mask-guided Asymmetric Contrastive and Semantic Alignment for Unsupervised Person Re-Identification
+
 ## Installation
 
 Install `conda` before installing any requirements.
@@ -56,5 +58,5 @@ The results are on Market1501 (M) and MSMT17 (MS).
 
 Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
 
-[TransReID-SSL](https://github.com/damo-cv/TransReID-SSL), [cluster-contrast-reid](https://github.com/alibaba/cluster-contrast-reid), [MAE](https://github.com/facebookresearch/mae).
+[TransReID-SSL](https://github.com/damo-cv/TransReID-SSL), [cluster-contrast-reid](https://github.com/alibaba/cluster-contrast-reid), [MAE](https://github.com/facebookresearch/mae), [UntransReID](https://github.com/mangye16/ReID-Survey/tree/master/Transformer-ReID-Survey/UnTransReID_USL_ReID), [TMGF](https://github.com/RikoLi/WACV23-workshop-TMGF).
 
