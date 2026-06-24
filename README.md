@@ -1,5 +1,3 @@
-<p align="center">
-  <h1 align="center"></h1>
 
 # Mask-guided Asymmetric Contrastive and Semantic Alignment for Unsupervised Person Re-Identification
 
