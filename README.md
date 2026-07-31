@@ -1,5 +1,6 @@
 
 # Mask-guided Asymmetric Contrastive and Semantic Alignment for Unsupervised Person Re-Identification
+[[paper]](https://ieeexplore.ieee.org/document/11595196/)
 
 ## Installation
 
