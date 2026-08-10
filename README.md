@@ -52,8 +52,20 @@ The results are on Market1501 (M) and MSMT17 (MS).
 | Ours | ViT-S/16 | 90.7 (96.2) | [model](https://drive.google.com/file/d/1qjQcmASFnbKPYK_TLFbHvzWgrPPUSCSf/view?usp=sharing) | 58.2 (81.9) | [model](https://drive.google.com/file/d/1qjQcmASFnbKPYK_TLFbHvzWgrPPUSCSf/view?usp=sharing) |
 | Ours | ViT-B/16 | 92.2 (96.5) | [model](https://drive.google.com/file/d/1aOUQ-NmdKZx6KZ4u7rDqNO3P6p_Ror_9/view?usp=sharing) | 64.5 (85.4) | [model](https://drive.google.com/file/d/1aOUQ-NmdKZx6KZ4u7rDqNO3P6p_Ror_9/view?usp=sharing) |
 
+## Citation
 
-# Acknowledgements
+If this work is helpful for your research, please cite the paper:
+
+```bibtex
+@article{tan2026irpp,
+  title   = {Mask-guided Asymmetric Contrastive and Semantic Alignment for Unsupervised Person Re-Identification},
+  author  = {},
+  journal = {IEEE Transactions on Image Processing},
+  year    = {2026}
+}
+```
+
+## Acknowledgements
 
 Our implementation is mainly based on the following codebases. We gratefully thank the authors for their wonderful works.
 
