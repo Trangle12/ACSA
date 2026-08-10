@@ -59,7 +59,7 @@ If this work is helpful for your research, please cite the paper:
 ```bibtex
 @article{tan2026irpp,
   title   = {Mask-guided Asymmetric Contrastive and Semantic Alignment for Unsupervised Person Re-Identification},
-  author  = {},
+  author  = {Xuan Tan, Ruijian Wei, Qixian Zhang, Ding Qi, Duoqian Miao, Cairong Zhao},
   journal = {IEEE Transactions on Image Processing},
   year    = {2026}
 }
