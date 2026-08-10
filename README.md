@@ -57,7 +57,7 @@ The results are on Market1501 (M) and MSMT17 (MS).
 If this work is helpful for your research, please cite the paper:
 
 ```bibtex
-@article{tan2026irpp,
+@article{tan2026mask,
   title   = {Mask-guided Asymmetric Contrastive and Semantic Alignment for Unsupervised Person Re-Identification},
   author  = {Xuan Tan, Ruijian Wei, Qixian Zhang, Ding Qi, Duoqian Miao, Cairong Zhao},
   journal = {IEEE Transactions on Image Processing},
