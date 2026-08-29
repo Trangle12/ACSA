@@ -1,6 +1,11 @@
 
 # Mask-guided Asymmetric Contrastive and Semantic Alignment for Unsupervised Person Re-Identification
-[[paper]](https://ieeexplore.ieee.org/document/11595196/)
+
+
+<p>
+  <a href="https://ieeexplore.ieee.org/document/11595196/"><img src="https://img.shields.io/badge/Venue-IEEE%20TIP%202026-111827.svg"></a>
+  <img src="https://hitscounter.dev/api/hit?url=https://github.com/Trangle12/ACSA/edit/main/README.md&label=ACSA&icon=github&color=%230d6efd&message=&style=flat&tz=UTC">
+</p>
 
 ## Installation
 
